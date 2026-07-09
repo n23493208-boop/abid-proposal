@@ -1,14 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Abid 🤍</title>
 
-<h1>🤍 I'm Sorry, Jaan</h1>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f8f4ff,#ffeef5);
+    font-family:Georgia, serif;
+}
+
+.card{
+    width:330px;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#444;
+    font-size:30px;
+}
+
+p{
+    color:#666;
+    font-size:20px;
+    line-height:1.6;
+}
+
+button{
+    margin:12px;
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#yes{
+    background:#ff7aa2;
+    color:white;
+}
+
+#no{
+    background:#ddd;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>🤍 For Abid</h1>
 
 <p>
-I never wanted to hurt you.<br>
-I'm truly sorry...<br><br>
-Will you forgive me? 🥺🤍
+In every lifetime,<br>
+I'd still choose you.<br><br>
+
+<b>Will you choose me? 🥺</b>
 </p>
 
+<button id="yes" onclick="yes()">Yes 🤍</button>
+<button id="no" onmouseover="move(this)">No 🙂</button>
 
-<div id="message">
-🥹 Thank you for forgiving me, Abid.<br>
-I promise I'll do better. 🤍🌸
 </div>
+
+<script>
+function yes(){
+alert("Yay! 🤍\n\nForever starts now. 🌙\n\n— Rabeya");
+}
+
+function move(btn){
+btn.style.position="absolute";
+btn.style.left=Math.random()*80+"%";
+btn.style.top=Math.random()*80+"%";
+}
+</script>
+
+</body>
+</html>
